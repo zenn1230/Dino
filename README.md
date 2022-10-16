@@ -6,7 +6,6 @@ Beberapa fitur yang ada :
 - [ ] Timer
 - [ ] Alarm Audio
 - [ ] Task notes
-- [ ] Music
 <br><br>
 ## Sumber
 - [unDraw](https://undraw.co)  
