@@ -1,0 +1,47 @@
+.nav{
+    font-family: "Noto Sans", sans-serif;
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: max(5vw, 60px);
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+}
+.nav__items{
+    padding:0 12px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.nav__items ul{
+    list-style: none;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav--dark{
+    background-color: #141414;
+    color: #fffaff;
+}
+.nav--dark a{
+    color: #fffaff;
+    text-decoration: none;
+}
+.nav a{
+    font-size: max(1.2vw, 2ch);
+}
+.nav__title{
+    font-size: 2.2vw;
+    display: none;
+}
+
+@media screen and (min-width:989px){
+    .nav__title{
+        display: initial;
+    }
+    .nav__items{
+        width: 35%;
+    }
+}
