@@ -1,9 +1,49 @@
 @charset "UTF-8";
 @import url(./component/navigation.css);
+@import url(./component/button.css);
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.tentang-kami{
+    width: 100vw;
+    margin: 0 auto;
+    margin-top: 23px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Noto Sans", sans-serif;
+}
+.tentang-kami .col:first-of-type{
+    display: flex;
+    flex-direction: column;
+}
+.tentang-kami .col:first-of-type p{
+    font-size: max(1.2vw, 2ch);
+    width: calc(max(1.2vw,32ch) / 1.1);
+    text-align: justify;
+}
+.tentang-kami .col:first-of-type a{
+    margin-top: 12px;
+    display: block;
+    text-decoration: none;
+    /* font-family: "Noto Sans", sans-serif; */
+}
+.tentang-kami .col:last-of-type{
+    width: 35vw;
+}
+.tentang-kami img{
+    width: 60%;
+}
+@media screen and (max-width:789px){
+    .tentang-kami .col:last-of-type{
+        display: none;
+    }
+    /* .tentang-kami .col:first-of-type{ */
+        /* flex-direction: column-reverse;
+    } */
 }
